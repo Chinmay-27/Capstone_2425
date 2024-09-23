@@ -1,0 +1,105 @@
+/* General Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+/* Position sections in the grid */
+#uploadSection {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#resourceSection {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#featureSelection {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#outputSection {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Card Styling */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: none;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 20px;
+    color: #495057;
+}
+
+/* Buttons Styling */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+}
+
+button.btn-success {
+    background-color: #28a745;
+}
+
+button.btn-info {
+    background-color: #17a2b8;
+}
+
+/* Dataset Info */
+#datasetInfo p, #resourceInfo p {
+    font-size: 1rem;
+}
+
+/* Output Graph */
+#outputGraph {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Responsive Layout for Small Screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
